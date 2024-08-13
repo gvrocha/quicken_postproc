@@ -1,4 +1,4 @@
-# quicken_postproc
+# quickenpostproc
 
 ## Account name prefixes:
 
