@@ -14,7 +14,7 @@
 #' last available price is used
 #' 
 #' @param investment_data_df a data frame containing cash transactions
-#' @param hard_coded_asset_price_df 
+#' @param hard_coded_asset_price_df a data frame containing (security, symbol, date, price) data
 #' @return a data frame containing positions and balances at the dates of each 
 #' (account, security, symbol, date)
 #' @author Guilherme V Rocha

@@ -1,8 +1,8 @@
 #---
 #' Fills in a data frame data_df of balances with the dates listed in date_vec
 #' Last balance is carried forward
-#' @param data_df
-#' @param date_vec
+#' @param data_df a data frame containing non-investment transactions
+#' @param date_vec a vector of dates at which balances are reported
 #' @return a data frame with balances for each account on dates listed in date_vec
 #' @export
 get_balance_at_date = function(data_df, date_vec){
