@@ -1,5 +1,11 @@
 # quickenpostproc
 
+## To install
+
+```
+devtools::install_github("gvrocha/quickenpostproc", force=TRUE, build_vignettes = TRUE)
+```
+
 ## Account name prefixes:
 
 I assume that different account types have  prefix indicating the type of account it is.   
