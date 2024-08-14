@@ -2,9 +2,12 @@
 #' preprocesses data to esnsure quantities are numerical, column names are
 #' more R friendly, etc
 #' 
-#' @param infile the filename containing transactions exported by Quicken
+#' @param df a data frame as read from a Quicken exported csv file
 #' @return A data frame containing the transactions from Quicken file
 #' @author Guilherme V Rocha
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
+#' @importFrom magrittr %>%
 #' @export
 read_transactions_from_df = function(df){
   res = 

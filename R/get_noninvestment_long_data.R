@@ -1,8 +1,15 @@
 #' Given a long list of transactions in a data frame containing only cash
 #' transactions, returns the balances for each account
 #' @param noninvestment_movement_df a data frame containing cash transactions
-#' @param date_vec
 #' @return a data frame containing balances at the dates of each (account, date)
+#' @importFrom dplyr filter
+#' @importFrom dplyr select
+#' @importFrom dplyr arrange
+#' @importFrom tidyr complete
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarize
+#' @importFrom dplyr mutate
+#' @importFrom magrittr %>%
 #' @author Guilherme V Rocha
 #' @export
 get_noninvestment_long_data = function(noninvestment_movement_df){

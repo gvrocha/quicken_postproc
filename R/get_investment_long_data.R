@@ -18,6 +18,20 @@
 #' @return a data frame containing positions and balances at the dates of each 
 #' (account, security, symbol, date)
 #' @author Guilherme V Rocha
+#' @importFrom zoo as.Date
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarise
+#' @importFrom dplyr filter
+#' @importFrom dplyr distinct
+#' @importFrom dplyr left_join
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
+#' @importFrom dplyr arrange
+#' @importFrom tidyr complete
+#' @importFrom tidyquant tq_get
+#' @importFrom dplyr anti_join
+#' @importFrom magrittr %>%
+#' @importFrom dplyr inner_join
 #' @export
 get_investment_long_data = function(investment_data_df, hard_coded_asset_price_df = NULL){
   

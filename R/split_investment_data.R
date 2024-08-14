@@ -4,6 +4,12 @@
 #' @param unfiltered_transaction_data a data frame containing transactions as read from Quicken csv
 #' @return A list with many data frames
 #' @author Guilherme V Rocha
+#' @importFrom dplyr filter
+#' @importFrom dplyr distinct
+#' @importFrom dplyr arrange
+#' @importFrom dplyr anti_join
+#' @importFrom dplyr semi_join
+#' @importFrom magrittr %>%
 #' @export
 split_investment_data = function(unfiltered_transaction_data){
   #---

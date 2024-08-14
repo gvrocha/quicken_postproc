@@ -4,6 +4,9 @@
 #' @param infile the filename containing transactions exported by Quicken
 #' @return A data frame containing the transactions from Quicken file
 #' @author Guilherme V Rocha
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
+#' @importFrom magrittr %>%
 #' @export
 read_transaction_file = function(infile){
   res = 

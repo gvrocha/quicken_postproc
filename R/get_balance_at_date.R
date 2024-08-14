@@ -4,6 +4,14 @@
 #' @param data_df a data frame containing non-investment transactions
 #' @param date_vec a vector of dates at which balances are reported
 #' @return a data frame with balances for each account on dates listed in date_vec
+#' @importFrom zoo as.Date
+#' @importFrom zoo na.locf
+#' @importFrom plyr ddply
+#' @importFrom dplyr semi_join
+#' @importFrom dplyr rename
+#' @importFrom dplyr arrange
+#' @importFrom dplyr mutate
+#' @importFrom dplyr select
 #' @export
 get_balance_at_date = function(data_df, date_vec){
   account_vec = data_df$account %>% unique() %>% sort()

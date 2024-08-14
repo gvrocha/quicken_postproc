@@ -6,6 +6,7 @@
 #' @param end_date the final date to keep (smaller than OR equal to)
 #' @return A data frame containing the transactions from Quicken file
 #' @author Guilherme V Rocha
+#' @importFrom dplyr filter
 #' @export
 filter_by_dates = function(df, start_date = "1500/01/01", end_date = "3000/01/01"){
   res = 
